@@ -4,7 +4,7 @@
 int main()
 {
 	int i;
-	/*
+	
 	SqList first, second;
 	InitList_Sq(&first);
 	InitList_Sq(&second);
@@ -30,7 +30,7 @@ int main()
 	printf("elemDeleted In third---> %d\n", elemDeleted);
 	for(i = 0; i < third.length; i++)
 		printf("third.elem[%d]: %d\n", i, third.elem[i]);
-	*/
+	
 	SqList four;
 	InitList_Sq(&four);
 	for(i = 1; i <= four.listsize; i++){
