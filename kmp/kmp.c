@@ -37,6 +37,29 @@ void get_next(SString T, int *next)
 	}
 }// get_next
 
+// 改写后的get_next函数
+void get_next2(SString T, int *next)
+{
+	// 和get_next函数的区别是，如果T的长度为1，则get_next2函数的结果是不对的
+	int i = 2;
+	next[1] = 0;
+	next[2] = 1;
+	int j = 1;
+	while(i < T[0])
+	{
+		if(T[i]==T[j]){
+			++i;
+			++j;
+			next[i]=j;
+		}
+		else
+		{
+			j = next[j];
+		}
+	}
+}
+
+// 修正后的get_next函数
 void get_nextval(SString T, int *nextval)
 {
 	int i = 1;

@@ -28,6 +28,7 @@ int main()
 
 	int *next =(int *)malloc(MAXSTRLEN * sizeof(int));
 	get_next(paternstr, next);
+	//get_next2(paternstr, next);
 	while(len)
 	{
 		printf("%d\n", next[len]);
