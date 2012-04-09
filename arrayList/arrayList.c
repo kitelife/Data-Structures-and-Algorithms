@@ -109,8 +109,8 @@ int Partition(SqList *L, int low, int high)
 			++low;
 		L->elem[high] = L->elem[low];
 	}
-		L->elem[low] = temp;
-		return low;
+	L->elem[low] = temp;
+	return low;
 }
 
 void QSort(SqList *L, int low, int high)
